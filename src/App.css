@@ -1,82 +1,117 @@
 body {
-  background-image: url(./images/nick-chong-N__BnvQ_w18-unsplash.jpeg);
-  background-size: cover;
+  position: relative;
+  /* background-image: url(./images/2832382.jpg); */
+  background-color: rgb(208, 208, 208);
 }
 
-.card {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: left;
-  margin: 35px auto;
-  max-width: 500px;
-  min-width: 300px;
-  border: 1px rgb(207, 207, 207) solid;
-  border-radius: 10px;
-  padding: 25px 15px;
-  background-color: white;
-  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.38);
-}
-
-h3 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: rgb(12, 109, 253);
-}
-
-h5 {
-  padding: 5px;
-  margin: 10px 0 0 0;
-  color: rgb(101, 153, 219);
-}
-
-.d-flex {
-  justify-content: space-around;
-  text-align: center;
-}
-
-.list {
-  border: 1px rgb(207, 207, 207) solid;
+.box, .chart, .table-container {
+  width: 460px;
+  height: 280px;
+  padding: 15px;
+  background-color: rgb(223, 197, 253);
   border-radius: 8px;
-  background-color: rgb(202, 235, 234);
-  margin: 15px 0;
-  padding: 3px;
-  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.38);
-}
-
-input,
-button {
-  margin: 5px 0;
-  width: 100%;
-}
-
-.income {
-  color: green;
-}
-
-.expense {
-  color: brown;
-}
-
-.total {
-  justify-content: space-between;
-  padding: 5px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .box {
-  border: 1px rgb(207, 207, 207) solid;
+  width: 768px;
+  height: 100vh;
+  border-radius: 0px;
+  background-color: rgba(130, 130, 130, 0.135);
+}
+
+.chart { 
+  top: 200px;
+}
+
+.chart-header, .table-header {
+  position: absolute;
+  left: 50%;
+  top: 170px;
+  transform: translate(-50%);
+}
+
+.table-header {
+  top: 510px;
+}
+
+.table-container {
+  background-color: rgb(193, 207, 255);
+  top: 540px;
+  height: auto;
+}
+
+td, th {
+  text-align: left;
+  padding: 6px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(169, 181, 221);
+}
+
+.logo-card {
+  color: #515151;
+  position: absolute;
+  left: 10px;
+}
+
+.user-card {
+  position: absolute;
+  right: 10px;
+}
+
+.chat-card {
+  z-index: 100;
+  width: 270px;
+  padding: 15px;
+  position: fixed;
+  right: 5px;
+  bottom: 0;
+  background-color: rgb(38, 71, 219);
   border-radius: 8px;
-  padding: 20px;
-  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.38);
 }
 
-.box:hover {
-  background-color: rgb(233, 233, 233);
+.chat-header {
+  text-align: center;
+  font-weight: bold;
+  color: white;
 }
 
-section {
-  margin: 10px;
-  padding: 10px;
+.notes-link {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  color: white;
+  border: solid 2px rgb(38, 71, 219);
+  border-radius: 8px;
+  padding: 8px 10px;
 }
 
-.btn-secondary {
-  width: 200px;
+/* <--- NOTES PAGE ---> */
+
+.notes-flex {
+  position: absolute;
+  top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  gap: 80px;
+  flex-wrap: wrap;
 }
+
+.notes-card, .newrelic-card, .splunk-card {
+  text-align: center;
+  height: auto;
+  width: 400px;
+  padding: 15px;
+  background-color: rgb(199, 253, 197);
+  border-radius: 8px;
+}
+
+.newrelic-card, .splunk-card {
+  background-color: rgb(253, 241, 197);
+}
+
