@@ -20,7 +20,7 @@ function chartApp() {
         labels: ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"],
         datasets: [{
             // get data from API
-            data: [5, 6, 5, 6, 3, 2, 4], 
+            data: [5, 6, 5, 6, 3, 2, 7], 
             backgroundColor: "transparent",
             borderColor: "rgb(127, 127, 255)",
             pointBorderColor: "transparent",
